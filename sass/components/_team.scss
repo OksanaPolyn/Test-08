@@ -2,7 +2,28 @@
   background-color: var(--btn-comand);
 }
 
-//.aside-item {
+
+.comand_list{
+  margin: -15px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.comand_about {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--main-title-color);
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.team_img {
   margin: 15px;
   border: 1px solid blue;
   &:not(:last-child) {
@@ -12,30 +33,15 @@
     }
   }
   @media screen and (min-width: 768px) {
+    margin: 15px;
+  }
+  @media screen and (min-width: 768px) {
     width: calc(100% / 12 * 6 - 30px);
   }
+  
   @media screen and (min-width: 1200px) {
     width: calc(100% / 12 * 3 - 30px);
   }
-}
-.comand_list{
-  display:flex;
-  flex-wrap: wrap;
-}
-.comand_about {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  color: var(--main-title-color);
-}
-.comand_about {
-  text-align: center;
-  margin: 0;
-  margin-bottom: 50px;
-}
-.comand_list {
-  display: flex;
-  padding-inline-start: 0px;
 }
 
 .comand_name {
@@ -60,9 +66,7 @@
     0px 2px 1px rgba(0, 0, 0, 20%);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-}
-.team_img:not(:last-child) {
-  margin-right: 30px;
+  
 }
 
 .photo_team {
