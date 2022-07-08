@@ -1,25 +1,25 @@
 .portfolio{
-    display: flex;
-    flex-wrap: wrap;
-    padding-inline-start: 0;
-    margin-right:-30px;
-    margin-bottom:-30px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+      
+    }
 }
 .item-potfolio{
-    display: flex;
-    width: 370px;
-    height: 404px;
+    margin: 15px;
     left: 215px;
     top: 262px;
-    
     background: var(--two-title-color);
     border: 1px solid var(--card-portfol);
+   
+}
+img.img-portf{
+    width: 100%;
 }
 
-.item-potfolio{
-    margin-right: 30px;
-    margin-bottom: 30px;   
-}
 .item-potfolio:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
