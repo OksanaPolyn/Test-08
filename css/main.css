@@ -941,18 +941,19 @@ img.photo_team {
 }
 
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
   padding-inline-start: 0;
-  margin-right: -30px;
-  margin-bottom: -30px;
 }
 
 .list-btn {
   list-style: none;
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+@media screen and (min-width: 1200px) {
+  .list-btn {
+    justify-content: center;
+  }
 }
 
 .item-btn {
@@ -962,7 +963,7 @@ img.photo_team {
   letter-spacing: 0.06em;
   color: var(--two-title-color);
   text-align: center;
-  padding: 0;
+  padding-bottom: 15px;
 }
 
 .item-btn:not(:last-child) {
@@ -1012,8 +1013,23 @@ img.photo_team {
   background: var(--two-title-color);
   border: 1px solid var(--card-portfol);
 }
+@media screen and (min-width: 768px) {
+  .item-potfolio {
+    width: calc(50% - 30px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .item-potfolio {
+    width: calc(33.3333333333% - 30px);
+  }
+}
 
-img.img-portf {
+.img-photo {
+  display: block;
+  height: auto;
+}
+
+img.img-photo {
   width: 100%;
 }
 

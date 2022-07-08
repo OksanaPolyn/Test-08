@@ -1,15 +1,17 @@
 .portfolio{
-    display: flex;
-    flex-wrap: wrap;
     padding-inline-start: 0;
-    margin-right:-30px;
-    margin-bottom:-30px;
+    
 }
 .list-btn {
     list-style: none;
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+   
+    margin-bottom: 35px;
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+      }
+  
 } 
 .item-btn{
     font-weight: 700;
@@ -18,7 +20,7 @@
     letter-spacing: 0.06em;
     color:var(--two-title-color);
     text-align: center;
-    padding: 0
+    padding-bottom: 15px;
 }
 
 .item-btn:not(:last-child) {
